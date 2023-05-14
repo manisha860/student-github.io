@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<TITLE>STUDENT REGISTRATION FORM</TITLE>
+</HEAD>
+
+<BODY bgcolor="yellow">
+<MARQUEE bgcolor="Yellow"><STRONG><span style="color:red" >WELCOME TO GREENFOTECH</span></STRONG></MARQUEE>
+<PRE><H2><B>Application/Admission Form                                      GREENFOTECH</H2></PRE>
+<FORM METHOD="GET"
+ACTION="http://localhost:8080/form1.jsp" >
+<TABLE BORDER="1" cellspacing="0" bgcolor="white">
+	<TR>
+		<TD> roll_number <span style="color: red;">*</span>:</TD>
+		<TD ><INPUT TYPE="TEXT" SIZE="43" NAME="roll_number" placeholder="BEXXF04F0XX"  required/></TD>
+		<TD>Date <span style="color: red;">*</span>:</TD>
+		<TD><INPUT TYPE="DATE" SIZE="20" NAME="dt" style="width:180px;" required></TD>
+		<TD STYLE="WIDTH:150">NO.</TD>
+	</TR>
+
+	<TR>
+		<TD>Name<span style="color: red;">*</span>:</TD>
+		<TD><INPUT TYPE="TEXT" SIZE="43" NAME="name" required></TD>
+		<TD rowspan="2" colspan="2"><INPUT TYPE=FILE name="image" required></TD>
+	</TR>
+	
+	<TR>
+		<TD>Address <span style="color: red;">*</span>:<BR></TD>
+		<TD><TEXTAREA rows="5" cols="41" NAME="address" required></TEXTAREA></TD>
+	</TR>
+
+	<TR>
+		<TD> Phone <span style="color: red;">*</span>:</TD>
+		<TD><INPUT TYPE="TEXT"  STYLE="HEIGHT:40" SIZE="43" NAME="phone" required></TD>
+		<TD>College <span style="color: red;">*</span>:<BR>Class <span style="color: red;">*</span>:<BR></TD> 
+		<TD><select	 name="college" style="width:180px;" required>
+			<OPTION>----Select----</OPTION>
+			<OPTION >GECA</OPTION>
+			<OPTION >Deogiri</OPTION>
+			<OPTION >GPA</OPTION>
+			<OPTION >MIT</OPTION>
+			<OPTION >NIT</OPTION>
+		</select><BR>
+		<INPUT TYPE="TEXT" SIZE="22" NAME="cls" required></TD>
+		
+	</TR>
+	<TR>
+		<TD>Email <span style="color: red;">*</span>:</TD>
+		<TD colspan="3"><INPUT TYPE="TEXT" SIZE="85" NAME="email" required></TD>
+		
+	</TR>
+	<TR>
+		<TD> Course <span style="color: red;">*</span>:</TD>
+		<TD><select	 name="course" style="width:320px;" required>
+			<OPTION>----Select----</OPTION>
+			<OPTION >Java full stack</OPTION>
+			<OPTION >Python</OPTION>
+			<OPTION >C</OPTION>
+			<OPTION >PHP</OPTION>
+			<OPTION >SQL</OPTION>
+			<OPTION >CSS</OPTION>
+		</select></TD>
+		<TD>Batch <span style="color: red;">*</span>:</TD>
+		<TD><INPUT TYPE="TEXT" SIZE="22" NAME="batch" required></TD>
+	</TR>
+	<TR>
+		<TD> Certificate No. <span style="color: red;">*</span>:</TD>
+		<TD><INPUT TYPE="TEXT" SIZE="43" NAME="certificate_no" required></TD>
+		<TD>Issue Date <span style="color: red;">*</span>:</TD>
+		<TD><INPUT TYPE="DATE" SIZE="20" NAME="issue_date" style="width:180px;" required></TD>
+	</TR>
+	<TR>
+		<TD> Status Code <span style="color: red;">*</span>:</TD>
+		<TD colspan="3"><INPUT TYPE="TEXT" SIZE="85" NAME="status_code" required></TD>
+	</TR>
+	<TR>
+		<TD> comment </TD>
+		<TD colspan="3"><TEXTAREA rows="5" cols="78" NAME="comment"></TEXTAREA></TD>
+	</TR>
+	<TR>
+		<TD colspan="4"><INPUT TYPE="SUBMIT" VALUE="Submit" style="background-color:lightgray;">&nbsp;<INPUT TYPE="RESET" VALUE="reset"  style="background-color:lightgray;"></TD>
+	</FORM>
+	
+	</TABLE>
+</BODY>
+</HTML>
+	
+		
+

@@ -1,0 +1,37 @@
+<HTML>
+<BODY bgcolor="green">
+<PRE><FONT FACE="Castellar" SIZE=20 color="white">                          GREENFOTECH</FONT></PRE><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="http://localhost:8080/form1.html" target="d"><INPUT TYPE=BUTTON VALUE="New Student Registration"></A>&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="http://localhost:8080/msm.html" target="d"><INPUT TYPE=BUTTON VALUE="Update Student Data"></A>&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="http://localhost:8080/form2.html" target="d"><INPUT TYPE=BUTTON VALUE="Delete Student Data"></A>&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="http://localhost:8080/form.jsp" target="d"><INPUT TYPE=BUTTON VALUE="View All Records"></A>&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="http://localhost:8080/form4.html" target="d"><INPUT TYPE=BUTTON VALUE="View Perticulat Student Data"></A><BR><BR>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<B color="white">VIEW STUDENT DATA </B>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<select name="d" id="d" size="1" onchange="loadFrame(this.value);" >
+	<OPTION value="" >----Select----</OPTION>
+	<OPTION value="http://localhost:8080/form5.html" target="d">Between dates</OPTION>
+	<OPTION value="http://localhost:8080/form4.html" target="d">Roll Number</OPTION>
+	<OPTION value="http://localhost:8080/form6.html" target="d">On course</OPTION>
+	<OPTION value="http://localhost:8080/form7.html" target="d">Search by College</OPTION>
+</select>
+<script>
+function loadFrame(url) {
+    if (url) {
+        parent.frames["d"].location.href = url;
+    }
+}
+</script>
+
+</BODY>
+</HTML>
+
+
+
+
